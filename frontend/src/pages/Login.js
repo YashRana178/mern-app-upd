@@ -11,7 +11,7 @@ export default function Login() {
     e.preventDefault();
     const res = await axios.post("http://localhost:5000/api/login", form);
     localStorage.setItem("token", res.data.token);
-    navigate("/home");
+    navigate("/dashboard");
   };
 
   return (
