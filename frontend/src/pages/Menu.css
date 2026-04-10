@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; }
+
+.menu-page {
+  min-height: 100vh;
+  background: #9b3c8c;
+  color: white;
+}
+
+.menu-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  background: rgba(0,0,0,0.18);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.menu-topbar-title { font-size: 1.1rem; font-weight: 700; }
+
+.menu-back-btn {
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-back-btn:hover { background: rgba(255,255,255,0.25); }
+
+.menu-content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.menu-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.menu-sub {
+  font-size: 1rem;
+  opacity: 0.65;
+  margin-bottom: 36px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(6px);
+}
+
+.menu-card:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.menu-card-danger {
+  border-color: rgba(220, 80, 80, 0.4);
+}
+.menu-card-danger:hover {
+  background: rgba(220, 80, 80, 0.15);
+  transform: translateX(5px);
+}
+
+.menu-card-icon { font-size: 1.6rem; flex-shrink: 0; }
+
+.menu-card-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.menu-card-desc {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}

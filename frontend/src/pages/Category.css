@@ -1,0 +1,221 @@
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* ── Top nav ── */
+.top-nav {
+  max-width: 1000px;
+  margin: 0 auto 16px;
+}
+
+.btn-menu {
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn-menu:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Shared Category styles */
+.category-container {
+  min-height: 100vh;
+  background: #9b3c8c;
+  padding: 40px 20px;
+  color: white;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* ── Form page ── */
+.category-form {
+  max-width: 480px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.85);
+}
+
+.form-group input,
+.category-form input {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  background: white;
+  color: #333;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* ── List page ── */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.list-header .category-title {
+  margin-bottom: 0;
+}
+
+.table-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(6px);
+}
+
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.category-table th {
+  padding: 14px 16px;
+  background: rgba(0,0,0,0.2);
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+.category-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.category-table tbody tr:hover {
+  background: rgba(255,255,255,0.07);
+}
+
+.edit-row input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.empty-msg {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.empty-msg span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ── Buttons ── */
+.btn-add {
+  padding: 10px 20px;
+  background: #e05c3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-view {
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-edit {
+  padding: 5px 12px;
+  background: #f0a500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 0.82rem;
+}
+
+.btn-delete {
+  padding: 5px 12px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.btn-save {
+  padding: 5px 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 0.82rem;
+}
+
+.btn-cancel {
+  padding: 5px 12px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
